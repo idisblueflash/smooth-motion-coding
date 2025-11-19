@@ -4,8 +4,9 @@
 verify node.js is installed with `node -v`, install it if there's no node on the system.
 
 ## create new project
-follow the docs/agent/configure-project.md to run the command to create a new project
-select TypeScript for default language, and the FFmpeg as default exporter.
+- follow the docs/agent/configure-project.md to run the command to create a new project. Select TypeScript for default language, and the FFmpeg as default exporter.
+- Ignore the work folder in root .gitignore, thus user's project won't effect while sync from GitHub on updates.
+  `echo "my-canvas" >> .gitignore`
 
 ## install packages
 after init, go inside the folder with `cd my-canvas` to install the dependencies with `npm install`
